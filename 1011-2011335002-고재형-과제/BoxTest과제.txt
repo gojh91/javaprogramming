@@ -1,0 +1,44 @@
+//2011335002
+package java1011;
+
+import java.util.Scanner;
+
+class Box {
+	private int width;
+	private int length;
+	private int height;
+	
+	Box(int w, int l, int h){
+		width=w;
+		length=l;
+		height=h;
+	}
+
+	public void isSameBox(boolean volume){
+		volume=width*length*height;
+		if(box1.volume=box2.volume)
+		System.out.println("동일함");
+		else
+		System.out.println("다름");
+	}
+}
+
+public class BoxTest {
+	public static void main(String args[]) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("상자의 가로 세로 높이 입력:");
+		int width=input.nextInt();
+		int length=input.nextInt();
+		int height=input.nextInt();
+		Box obj1 = new Box(width, length, height);
+		
+		int width=input.nextInt();
+		int length=input.nextInt();
+		int height=input.nextInt();
+		Box obj2 = new Box(width, length, height);
+
+		isSameBox(obj1, obj2);
+
+		
+	}
+}
